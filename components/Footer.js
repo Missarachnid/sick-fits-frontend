@@ -11,6 +11,12 @@ const FooterStyles = styled.footer`
     font-size: 1.8rem;
     padding-top: 10px;
   }
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 `;
 
 export default function Footer() {

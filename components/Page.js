@@ -36,7 +36,6 @@ const GlobalStyles = createGlobalStyle`
     line-height: 2;
     min-width: 100vw;
     min-height: 100vh;
-    
   }
   a {
     text-decoration: none;
@@ -52,17 +51,16 @@ const GlobalStyles = createGlobalStyle`
 
 const InnerStyles = styled.div`
   max-width: var(--maxWidth);
-
+  margin: 0;
   padding: 3rem;
-  width: 100%;
 `;
 // it did not work when these styles were added to the body, so a new div was added
 const MainStyles = styled.div`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  width: 100vw;
-
+  min-width: 100vw;
+  margin: 0;
   padding: 0;
 `;
 
@@ -73,7 +71,6 @@ export default function Page({ children }) {
       <MainStyles>
         <Header />
         <InnerStyles>{children}</InnerStyles>
-
         <Footer />
       </MainStyles>
     </div>
