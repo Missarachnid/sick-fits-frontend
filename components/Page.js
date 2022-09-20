@@ -1,5 +1,6 @@
 import propTypes from 'prop-types';
 import styled, { createGlobalStyle } from 'styled-components';
+import CookieConsent from 'react-cookie-consent';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -72,6 +73,21 @@ export default function Page({ children }) {
         <Header />
         <InnerStyles>{children}</InnerStyles>
         <Footer />
+        <CookieConsent
+          location="bottom"
+          buttonText="got it"
+          cookieName="ConsentCookie"
+          style={{ background: 'black' }}
+          buttonStyle={{
+            background: 'white',
+            color: 'black',
+            fontSize: '16px',
+            borderRadius: '4px',
+          }}
+          expires={150}
+        >
+          This website uses cookies only to enhance the user experience.
+        </CookieConsent>
       </MainStyles>
     </div>
   );
