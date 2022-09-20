@@ -27,7 +27,7 @@ export default function Footer() {
         mmkepler.com
       </a>
       <a
-        href="https://github.com/Missarachnid/Advanced-React"
+        href="https://github.com/Missarachnid/sick-fits-frontend"
         target="_blank"
         rel="noreferrer"
       >
