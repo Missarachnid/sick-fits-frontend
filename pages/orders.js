@@ -81,7 +81,11 @@ export default function OrdersPage() {
                     {order.items.map((item) => (
                       <img
                         key={`image-${item.id}`}
-                        src={item.photo?.image?.publicUrlTransformed}
+                        src={
+                          item.photo === null
+                            ? 'https://res.cloudinary.com/mmk/image/upload/v1663638477/sickfits2/Karen_izeo6i.jpg'
+                            : item.photo?.image?.publicUrlTransformed
+                        }
                         alt={item.name}
                       />
                     ))}
