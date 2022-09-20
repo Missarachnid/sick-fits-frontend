@@ -66,6 +66,12 @@ export default function Cart() {
       <footer>
         <p>{formatMoney(calcTotalPrice(me.cart))}</p>
       </footer>
+      <div>
+        <a href="https://stripe.com/docs/testing?numbers-or-method-or-token=card-numbers#visa">
+          This is not a real site.
+          <br /> Click here to get find a test card number from Stripe.
+        </a>
+      </div>
       <Checkout />
     </CartStyles>
   );
