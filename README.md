@@ -1,21 +1,35 @@
-# This is the follow along for Wes Bos' Advanced React Tutorial
+## Advanced React & GraphQL project from Wes Bos' tutorial
 
-## This is the FrontEnd of the project. The backend of the project [here](https://github.com/Missarachnid/sick-fits-backend)
+### This is the front end repository. The back end repository is [here](https://github.com/Missarachnid/sick-fits-backend)
 
-## The deployed project front end can be seen here: [Sick-Fits](https://www.sick-fits.com)
+### The deployed website: [sick-fits.com](https://www.sick-fits.com)
 
-## Please keep in mind this is a tutorial project and the products are not real. There is a link to Stripe's website to get a testing card number above the checkout area. Please do not enter real numbers, this is not a real website.
+### The back end console: [app.sick-fits.com](https://www.app.sick-fits.com)
+
+### Project functionality - Fake shopping site Sick Fits
+
+- Users can see items for sale, but can't put them in the cart unless signed in.
+- Users can create an account. They can then add items to cart, purchase items or list them for sale.
+- Users can see their account information and past orders
+- Users can request a password reset and receive an email with a link containing a token
+- Users can sign into the keystone.js console and edit products they have added for sale.
+- If a user has been given the role of editor they can edit all products.
+- If a user has been given the role of admin they can edit all products, assign products to users, and edit and create users.
+- A user can check out using a fake card number and receive their order information.
 
 ### Technology Used:
 
-- React/JavaScript
-- Typescript Backend
-- Apollo/GraphQL/Keystone
-- CSS/Flexbox/Grid/Styled Components
-- Cloudflare to force HTTPS
+- React/Next.js
+- JavaScript Frontend/Typescript Backend
+- Apollo/GraphQL/
+- Keystone.js
+- MongoDB
+- Cloudinary
+- CSS/Styled Components
+- Cloudflare
 - Front End deployed on Heroku
 - Back End deployed on Digital Ocean
-- Domain controlled through Gooogle
+- Domain controlled through Google
 - Payment through Stripe - Although it is a fake site, no money is exchanged with the use of a fake number found through link provided
 - Testing with Jest
 - Email trapping with Ethereal and Nodemail for development
@@ -31,7 +45,7 @@
 - Add SameSite, Secure, and httpOnly properties to the cookie so it would function properly
 - Route to products after sign in
 - Added Cloudflare to force https to avoid cookie issues
-- Added styling to products and thier pages and responsiveness
+- Added styling to products and their pages and responsiveness
 - Cookie Consent notification
 
 ### Things I am still working on:
@@ -39,7 +53,9 @@
 - Adding items to cart without being signed in
 - Adding a hamburger menu for mobile
 
-### README from the main project repository
+#### Please keep in mind this is a tutorial project and the products are not real. There is a link to Stripe's website to get a testing card number above the checkout area. Please do not enter real numbers, this is not a real website.
+
+#### README from the main project repository
 
 ---
 
